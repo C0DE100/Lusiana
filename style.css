@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* Global Values */
 /* -------------------------------------------------------- */
 body {
   margin: 0;
-  overflow: hidden;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 img {
@@ -11,10 +16,8 @@ img {
 
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 /* * {
@@ -142,59 +145,9 @@ main {
   flex-direction: column;
 }
 
-/* Options auto text writer */
+/* Circles */
 
-.option-wrapper {
-  display: flex;
-}
-
-.option-wrapper .dynamic-texts {
-  line-height: 39px;
-  /* background-color: aqua; */
-  height: 39px;
-  overflow: hidden;
-}
-
-.dynamic-texts li {
-  list-style-type: none;
-  color: #ffc374;
-  position: relative;
-  top: 0;
-  animation: slide 8s steps(4) infinite;
-}
-.dynamic-texts li {
-  position: relative;
-}
-
-.dynamic-texts li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #7f9f80;
-  animation: typing 2s steps(100) infinite;
-}
-
-/* Key frames */
-/* ------------------- */
-
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 25px);
-  }
-
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes slide {
-  100% {
-    top: -156px;
-  }
-}
+/* -------- */
 
 @keyframes imgRight-load {
   0% {
