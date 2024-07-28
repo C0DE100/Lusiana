@@ -10,12 +10,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
-      crossorigin="anonymous"
-    />
+    <script src="https://kit.fontawesome.com/b0eb5b8f4b.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
 
     <!-- Custom CSS -->
@@ -23,17 +18,16 @@
   </head>
   <body>
     <!-- NAV BAR -->
-    <div class="home-color">
-      <header class="text-white shadow">
-        <div class="nav-bar row wrapper">
-          <a href="" class="text-white logo">
+      <header class="text-white shadow green-bg">
+        <div class="nav-bar d-flex wrapper">
+          <a href="./index.html" class="text-white logo">
             <img
               src="./logo/png/logo-no-background.png"
               alt="Lusi's logo"
               class="logo-img"
             />
           </a>
-          <ul class="row">
+          <ul class="d-flex">
             <li><a href="#">Home</a></li>
             <li><a href="./paintings.html">Paintings</a></li>
             <li><a href="#">About</a></li>
@@ -42,16 +36,35 @@
         </div>
       </header>
       <!-- Main section -->
-      <main class="container">
-        <div class="d-flex main-section flex-column justify-content-center align-items-center">
-          <div class="text-container shadow-lg d-flex align-items-center justify-content-center flex-column ">
-            <!-- <h1 class="text-white text-center mb-1">Welcome to my artwork!</span></h1> -->
-            <h1 class="text-white text-center mb-1">My name is <span>Lusiana</span></h1>
-            <h4 class="text-white text-left">I'm <span class="auto-type black"></span></h4>
-          </div>
+      <section id="hero" class="d-flex main-section flex-column justify-content-around align-items-center">
+          <main class="wrapper">
+            <div class=" d-flex align-items-center justify-content-center flex-column">
+              <h1 class="text-white text-center mb-1">Welcome</h1>
+              <h1 class="text-white text-center mb-1">I am <span>Lusiana Ampeva</span></h1>
+              <h4 class="text-white text-left">I'm <span class="auto-type"></span></h4>
+            </div>
+          <!-- <i class="fa-2x fa-solid fa-angles-down green click-down"></i> -->
+          </main>
+      </section>
+
+      <section id="quote" class="pt-5 pb-5 bg-light">
+        <div class="pt-5 pb-5 flex-column d-flex justify-content-center align-items-center text-center ">
+          <p class="pb-3">A quote</p>
+          <h4 class="m-0 p-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, explicabo!"</h4>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section id="inspiration" class="green-bg">
+        <div class="pt-5 pb-5 flex-column d-flex justify-content-center align-items-center text-center yellow">
+              <h3 class="pb-3">Lusiana's inspiration</h3>
+              <p class="text-center">Lusiana Ampeva is a contemporary visual artist, mostly focused on
+                painting. Her artistic approach consists of rapid gestural movments, with
+                free compositions, followed by an expressionistic, metaphysical and
+                illustrative treatment. In her work she uses combinations of different
+                materials, including oil, acrylic, sprays, gypsum, etc.</p>
+        </div>
+      </section>
+
     
         
     <!-- <script
