@@ -17,7 +17,8 @@
       crossorigin="anonymous"
     />
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -40,93 +41,24 @@
               </ul>
             </div>
         </header>
-        <main class="container main-section">
-
-            <div class="justify-content-center align-items-center">
-                    <div class="slider-images">
-                        <div class="slider-img shadow-lg">
-                            <img src="img/lusi1.jpg" alt=""> 
-                            <div class="overlay"></div>
-                            <h1>Mike</h1>
-                            <div class="details">
-                                <h2>Detail1</h2>
-                                <p>web3 developer</p>
-                            </div>
-                        </div>
-                        <div class="slider-img shadow-lg">
-                            <img src="img/lusi2.jpg" alt=""> 
-                            <div class="overlay"></div>
-                            <h1>Roy</h1>
-                            <div class="details">
-                                <h2>Detail2</h2>
-                                <p>php developer</p>
-                            </div>
-                        </div>
-                        <div class="slider-img shadow-lg">
-                            <img src="img/lusi3.jpg" alt="">
-                            <div class="overlay"></div>
-                            <h1>Mike</h1>
-                            <div class="details">
-                                <h2>Detail3</h2>
-                                <p>web3 developer</p>
-                            </div>
-                        </div>
-                        <div class="slider-img shadow-lg">
-                            <img src="img/lusi4.jpg" alt="">
-                            <div class="overlay"></div>
-                            <h1>Mike</h1>
-                            <div class="details">
-                                <h2>Detail4</h2>
-                                <p>web3 developer</p>
-                            </div>
-                        </div>
-                        <div class="slider-img shadow-lg active">
-                            <img src="img/lusi5.jpg" alt="">
-                            <div class="overlay"></div>
-                            <h1>Mike</h1>
-                            <div class="details">
-                                <h2>Detail</h2>
-                                <p>web3 developer</p>
-                            </div>
-                        </div>
-                        <div class="slider-img shadow-lg">
-                            <img src="img/lusi6.jpg" alt="">
-                            <div class="overlay"></div>
-                            <h1>Mike</h1>
-                            <div class="details">
-                                <h2>Detail</h2>
-                                <p>web3 developer</p>
-                            </div>
-                        </div>
-                        <div class="slider-img shadow-lg">
-                            <img src="img/lusi7.jpg" alt="">
-                            <div class="overlay"></div>
-                            <h1>Mike</h1>
-                            <div class="details">
-                                <h2>Detail 123123ajkshdajkshdkajsd</h2>
-                                <p>AThasjkldhkjashdkajsdkajshdjkahsdjkahskdjasd</p>
-                            </div>
-                        </div>
-                        <div class="slider-img shadow">
-                            <img src="img/lusi8.jpg" alt="">
-                            <div class="overlay"></div>
-                            <h1>Mike</h1>
-                            <div class="details">
-                                <h2>Detail</h2>
-                                <p>web3 developer</p>
-                            </div>
-                        </div>
-                    </div>
+        <main class="container">
+            <div class="d-flex justify-content-center align-items-center main-section">
+              <div id="owl" class="owl-carousel">
+                      <div class="rounded"><img class="rounded" src="./img/lusi1.jpg" alt=""></div>
+                      <div class="rounded"><img class="rounded" src="./img/lusi2.jpg" alt=""></div>
+                      <div class="rounded"><img class="rounded" src="./img/lusi3.jpg" alt=""></div>
+                      <div class="rounded"><img class="rounded" src="./img/lusi4.jpg" alt=""></div>
+                      <div class="rounded"><img class="rounded" src="./img/lusi5.jpg" alt=""></div>
+                      <div class="rounded"><img class="rounded" src="./img/lusi6.jpg" alt=""></div>
+                      <div class="rounded"><img class="rounded" src="./img/lusi7.jpg" alt=""></div>
+                      <div class="rounded"><img class="rounded" src="./img/lusi8.jpg" alt=""></div>
+              </div>
             </div>
         </main>
         
     </div>
         
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -137,13 +69,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-     <script>
-        jQuery(document).ready(function($){
-            $('.slider-img').on('click', function(){
-                $('.slider-img').removeClass('active')
-                $(this).addClass('active');
-            })
-        });
-     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="owlCarousel.js"></script>
   </body>
 </html>
