@@ -1,4 +1,0 @@
-blue #124076
-green #7F9F80
-yellow #F9E897
-orange #FFC374
