@@ -12,15 +12,16 @@
     />
     <script src="https://kit.fontawesome.com/b0eb5b8f4b.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- NAV BAR -->
-      <header class="text-white shadow green-bg">
+      <header class="text-light shadow green-bg">
         <div class="nav-bar d-flex wrapper">
-          <a href="./index.html" class="text-white logo">
+          <a href="./index.html" class="text-light logo">
             <img
               src="./logo/png/logo-no-background.png"
               alt="Lusi's logo"
@@ -39,9 +40,9 @@
       <section id="hero" class="d-flex main-section flex-column justify-content-around align-items-center shadow">
           <main class="wrapper">
             <div class=" d-flex align-items-center justify-content-center flex-column">
-              <h1 class="text-white text-center mb-1">Welcome</h1>
-              <h1 class="text-white text-center mb-1">I am <span>Lusiana Ampeva</span></h1>
-              <h4 class="text-white text-left">I'm <span class="auto-type"></span></h4>
+              <h1 class="text-light text-center mb-1">Welcome</h1>
+              <h1 class="text-light text-center mb-1">I am <span>Lusiana Ampeva</span></h1>
+              <h4 class="text-light text-left">I'm <span class="auto-type"></span></h4>
             </div>
           <!-- <i class="fa-2x fa-solid fa-angles-down green click-down"></i> -->
           </main>
@@ -56,18 +57,28 @@
         </div>
       </section>
 
-      <section id="inspiration" class="green-bg pt-5 pb-5">
+      <section id="inspiration" class="green-bg pt-5">
         <div class="container">
-          <div class="d-flex justify-content-center align-items-center flex-column text-center text-white pt-5 pb-5">
+          <div class="d-flex justify-content-center align-items-center flex-column text-center text-light pt-5 pb-5">
             <h3 class="pb-3">Artist's inspiration</h3>
-            <p class="text-lg-justify text-left w-lg-50 pb-3">Lusiana Ampeva is a contemporary visual artist, mostly focused on painting. Her artistic approach consists of rapid gestural movements, with free compositions, followed by an expressionistic, metaphysical and illustrative treatment. In her work she uses combinations of different materials, including oil, acrylic, sprays, gypsum, etc.<br><br> The author often draws inspiration from the depth of her consciousness, which allows her to voluntarily come to the surface, layering all possible connections of awareness and unconsciousness to coexist in that space, on that canvas. Her paintings depict on parts of her personal life, environment,everyday spontaneous interactions with the world around her.</p>
-            <div class="btn btn-dark shadow">Go to paintings!</div>
+            <p class="text-lg-justify text-left pb-5">Lusiana Ampeva is a contemporary visual artist, mostly focused on painting. Her artistic approach consists of rapid gestural movements, with free compositions, followed by an expressionistic, metaphysical and illustrative treatment. In her work she uses combinations of different materials, including oil, acrylic, sprays, gypsum, etc.<br><br> The author often draws inspiration from the depth of her consciousness, which allows her to voluntarily come to the surface, layering all possible connections of awareness and unconsciousness to coexist in that space, on that canvas. Her paintings depict on parts of her personal life, environment,everyday spontaneous interactions with the world around her.</p>
+            <div id="owl" class="owl-carousel">
+              <a href="./paintings.html?#1"><img class="rounded" src="./img/lusi1.jpg" alt=""></a>
+              <a href="./paintings.html?#2"><img class="rounded" src="./img/lusi2.jpg" alt=""></a>
+              <a href="./paintings.html?#3"><img class="rounded" src="./img/lusi3.jpg" alt=""></a>
+              <a href="./paintings.html?#4"><img class="rounded" src="./img/lusi4.jpg" alt=""></a>
+              <a href="./paintings.html?#5"><img class="rounded" src="./img/lusi5.jpg" alt=""></a>
+              <a href="./paintings.html?#6"><img class="rounded" src="./img/lusi6.jpg" alt=""></a>
+              <a href="./paintings.html?#7"><img class="rounded" src="./img/lusi7.jpg" alt=""></a>
+              <a href="./paintings.html?#8"><img class="rounded" src="./img/lusi8.jpg" alt=""></a>
+            </div>
           </div>
+          
         </div>
       </section>
-      <section id="inspiration" class="green-bg pt-5 pb-5">
+      <section id="inspiration" class="green-bg pb-5">
         <div class="container">
-          <div class="d-flex justify-content-center align-items-center flex-column text-center text-white pt-5 pb-5">
+          <div class="d-flex justify-content-center align-items-center flex-column text-center text-light pt-5">
             <h3 class="pb-3">Are you interested?</h3>
             <div class="btn btn-dark shadow">Lets get in touch</div>
             
@@ -87,12 +98,8 @@
       </footer>
     
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
@@ -103,6 +110,9 @@
       crossorigin="anonymous"
     ></script> -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="owlCarousel.js"></script>
     <script src="typedScript.js"></script>
+
   </body>
 </html>

@@ -140,11 +140,26 @@ a {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: linear-gradient();
 }
+
 
 .main-section {
   height: calc(80vh);
+}
+
+
+/* OWL NAVBAR */
+
+.owl-nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+.owl-dots {
+  display: none;
 }
 
 /* ------------------- */
@@ -185,5 +200,9 @@ a {
 
   .main-section {
     height: calc(75vh);
+  }
+
+  #owl {
+    width: 90%;
   }
 }
