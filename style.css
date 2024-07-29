@@ -11,6 +11,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 img {
@@ -142,24 +149,40 @@ a {
   background-repeat: no-repeat;
 }
 
+.text-container {
+  width: 90%;
+}
 
 .main-section {
   height: calc(80vh);
 }
+.all-paintings {
+  font-size: 17px;
+  color: #eeeeee;
+  font-weight: 300;
+  text-decoration: underline;
+}
 
+.all-paintings:hover {
+  color: #f9e897;
+}
 
 /* OWL NAVBAR */
-
+#owl img {
+  border: 5px solid white;
+  border-radius: 10px;
+}
 .owl-nav {
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 30px;
+  display: none;
 }
 
 .owl-dots {
   display: none;
+}
+
+/* Footer */
+footer .container a i:hover {
+  color: white;
 }
 
 /* ------------------- */
@@ -198,11 +221,21 @@ a {
     font-size: 19px;
   }
 
+  .all-paintings {
+    font-size: 19px;
+  }
   .main-section {
     height: calc(75vh);
   }
 
   #owl {
     width: 90%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .text-container {
+    width: 65%;
   }
 }
