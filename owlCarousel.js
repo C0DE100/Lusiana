@@ -4,6 +4,9 @@ $(document).ready(function(){
       autoplay: true,
       lazyLoad: true,
       autoplayTimeout: 3000,
+      autoplaySpeed: 1500,
+      animateOut: 'fadeOut',
+      animateOut: 'fadeIn',
       responsiveClass:true,
       responsive : {
         // breakpoint from 0 up
@@ -16,7 +19,8 @@ $(document).ready(function(){
         480 : {
           items: 2,
           margin: 30,
-        }
+        }, 
+        
     }
     });
   });
