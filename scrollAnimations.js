@@ -15,6 +15,22 @@
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const fadeInSections = document.querySelectorAll('.fade-in-on-scroll');
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-visible');
+          observer.unobserve(entry.target); // Stop observing once it has faded in
+        }
+      });
+    }, { threshold: 0.1 }); // Trigger when 10% of the section is visible
+  
+    fadeInSections.forEach(section => {
+      observer.observe(section);
+    });
+  });
 
   // QUOTE EVERY CHILD IS AN ARTIST ON SCROLL SHOW + border bottom add
   document.addEventListener("DOMContentLoaded", function () {

@@ -110,21 +110,15 @@ a {
   padding-bottom: 5px;
 }
 
-.logo {
-  border: 1px solid var(--green);
-  border-radius: 50%;
-}
-
-
 .nav-bar .logo .logo-img {
   max-height: 100px;
   width: auto;
 }
 
 .nav-bar ul li a {
-  font-size: 17px;
   color: #eeeeee;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .nav-bar ul li:not(:last-child) {
@@ -173,33 +167,32 @@ a {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
-  width: 0; /* Starts at 0 width, then expands */
+  width: 0; 
   animation: typing 2s steps(20, end);
-  /* transition: border-bottom 0.5s ease-in-out; */
   padding-bottom: 5px;
 }
 .typewriter-quote::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 100%; /* Start from the middle */
+  left: 100%; 
   width: 0px;
   height: 1px;
   border-radius: 5px;
-  background-color: lightgray; /* Border color */
-  transition: width 0.5s ease, left 0.5s ease; /* Smooth transition */
+  background-color: lightgray; 
+  transition: width 0.5s ease, left 0.5s ease; 
 }
 
 /* After typing, this class adds the bottom border */
 .bottom-border::after {
-  width: 100%; /* Full width */
-  left: 0; /* Move the starting point from middle to the left */
+  width: 100%;
+  left: 0; 
 }
 
 /* Typing animation */
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%; } /* Adjust width based on the length of the quote */
+  to { width: 100%; } 
 }
 
 /* About - girl section */
@@ -221,7 +214,23 @@ a {
 
 .different-logo {
   width: 130px;
-  border: 2px solid var(--green);
+}
+
+/* Initially hidden with opacity 0 */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px); /* Optional: slight upward movement */
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+/* Fade in when scrolled into view */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0); /* Bring it back to the original position */
+}
+
+.letter-spacing {
+  letter-spacing: 0.1em;
 }
 
 
@@ -255,8 +264,12 @@ footer .container a i:hover {
     padding-bottom: 0px;
   }
 
+  /* .nav-bar ul li:not(:last-child) {
+    margin-right: 25px;
+  } */
+
   .nav-bar ul li a {
-    font-size: 19px;
+    font-size: 23px;
   }
 
   .all-paintings {
@@ -274,5 +287,11 @@ footer .container a i:hover {
 @media only screen and (min-width: 768px) {
   .text-container {
     width: 65%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .responsive-h4 {
+    font-size: 1.2rem;
   }
 }
